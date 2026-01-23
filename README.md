@@ -9,7 +9,7 @@ Computer Science undergraduate and software engineer interested in building **re
 - **Core CS:** Data structures, algorithms, object-oriented design  
 - **Web & APIs:** REST APIs, React, Next.js  
 - **Data:** PostgreSQL, NoSQL  
-- **Applied AI:** LLM APIs, RAG, basic agent orchestration (LangChain)
+- **Applied AI:** LLM APIs, RAG, MCP,basic agent orchestration (LangChain)
 
 ---
 
