@@ -23,7 +23,4 @@ Computer Science undergraduate and software engineer interested in building **re
 ## 🌱 Currently Learning
 Scalable system design, applied AI reliability, and cloud fundamentals.
 
----
 
-📫 **Email:** nithishyenaganti02@gmail.com  
-🔗 **GitHub:** https://github.com/Nithish-Yenaganti
