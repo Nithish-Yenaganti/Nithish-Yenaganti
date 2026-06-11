@@ -1,26 +1,36 @@
-# Hi, I’m Nithish 
+# Hi, I'm Nithish
 
-Computer Science undergraduate and software engineer interested in building **reliable, real-world software systems**. I enjoy working across backend, full-stack, and applied AI projects, with a focus on clean design, scalability, and practical impact.
-
----
-
-##  What I Work With
-- **Languages:** Python, Java, JavaScript / TypeScript, SQL  
-- **Core CS:** Data structures, algorithms, object-oriented design  
-- **Web & APIs:** REST APIs, React, Next.js  
-- **Data:** PostgreSQL, NoSQL  
-- **Applied AI:** LLM APIs, RAG, MCP,basic agent orchestration (LangChain)
+Software engineer with 2+ years of experience shipping production AI systems
+for clients across industries. I build across the full stack — from distributed
+agentic pipelines and RAG systems on GCP to MCP servers and fine-tuned LLMs —
+with a focus on reliability, scalability, and real-world impact.
 
 ---
 
-##  What You’ll Find Here
-- Full-stack and backend projects  
-- AI-powered applications built end-to-end  
-- Code focused on clarity, correctness, and steady improvement  
+## What I Work With
+
+- **Languages:** Python, TypeScript, JavaScript (ES6+), SQL
+- **AI & ML:** LangChain, LangGraph, RAG, Agentic Systems (ReAct, Self-Reflection,
+  Hierarchical Delegation), QLoRA Fine-Tuning, PEFT, PyTorch, Hugging Face,
+  LLM Evals, MCP
+- **Backend & Infra:** FastAPI, Node.js, PostgreSQL, MongoDB, Pinecone,
+  Hybrid Search (Dense + BM25)
+- **Cloud & DevOps:** GCP (Cloud Run, Vertex AI, Cloud Logging), Docker,
+  Terraform, GitHub Actions CI/CD
+- **Frontend:** React.js, Next.js, Tailwind CSS, Streamlit
 
 ---
 
-##  Currently Learning
-Scalable system design, applied AI reliability, and cloud fundamentals.
+## What You'll Find Here
 
+- Production-grade agentic pipelines and multi-tenant RAG systems
+- MCP servers for autonomous agent safety and context management
+- ML fine-tuning pipelines with end-to-end evaluation harnesses
+- Full-stack applications built for real client environments
 
+---
+
+## Currently Exploring
+
+Large-scale distributed system design, AI reliability engineering,
+and search infrastructure.
