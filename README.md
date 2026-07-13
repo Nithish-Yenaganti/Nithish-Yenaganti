@@ -1,6 +1,6 @@
 # Hi, I'm Nithish
 
-Software engineer with 2+ years of experience shipping production AI systems
+Software engineer shipping production AI systems
 for clients across industries. I build across the full stack — from distributed
 agentic pipelines and RAG systems on GCP to MCP servers and fine-tuned LLMs —
 with a focus on reliability, scalability, and real-world impact.
