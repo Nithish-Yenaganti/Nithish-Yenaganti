@@ -10,8 +10,7 @@ I'm making improvements to **Nirnaya** and testing benchmarks for **ProxyLLM**.
 
 ### Nirnaya
 
-Nirnaya is an AI due diligence app with four parallel research workers that analyze a company or open-source project's team, funding, technology, and competitors to produce reports with source links, supporting quotes, and evidence gaps. It includes a web interface, persistent results, and spending controls; real-world research validation and cloud deployment are pending.
-
+Nirnaya is an AI due diligence app with four parallel research workers that analyze a company or open-source project's team, funding, technology, and competitors to produce reports with source links, supporting quotes, and evidence gaps. It includes a web interface, persistent results, and spending controls.
 ### ProxyLLM
 
 ProxyLLM is a Python LLM gateway built with FastAPI and SQLite that provides a unified API for Fireworks and Anthropic, with per-app virtual keys and server-side provider credentials. It supports access control, rate limiting, streaming, response caching, usage and estimated cost tracking, plus a local dashboard and automated tests.
