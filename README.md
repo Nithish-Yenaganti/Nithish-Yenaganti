@@ -7,6 +7,27 @@ with a focus on reliability, scalability, and real-world impact.
 
 ---
  
+## Currently Working On
+
+- Making improvements to **Nirnaya**, my AI research app for companies and open-source projects.
+- Stress testing **ProxyLLM**, my Python gateway for Fireworks and Anthropic models.
+
+## Projects
+
+### Nirnaya
+
+An AI research app that turns a company or open-source project's name or website into a source-backed report. Four workers research its team, funding, technology, and competitors in parallel, then combine their findings with source links, supporting quotes, and clear notes about missing information.
+
+Includes a web interface, saved results, and spending controls. I'm currently making improvements; real-world research testing and cloud deployment are still pending.
+
+### ProxyLLM
+
+A Python project that gives applications one shared API for Fireworks and Anthropic models. Each application gets its own virtual key, while the real provider keys stay on the server.
+
+Built with FastAPI and SQLite, it includes access controls, request limits, streaming responses, reusable response caching, and usage and estimated cost tracking. A local dashboard and automated tests support the project as a learning and portfolio effort. I'm currently stress testing it.
+
+---
+
 ## Open Source
  
 **[litellm](https://github.com/BerriAI/litellm)** — Python SDK and AI Gateway to call 100+ LLMs · ⭐ 50k+
@@ -26,3 +47,4 @@ with a focus on reliability, scalability, and real-world impact.
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=for-the-badge&logo=pinecone&logoColor=white)](https://www.pinecone.io/)
 [![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/)
+
