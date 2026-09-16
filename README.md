@@ -4,21 +4,17 @@ I'm a software engineer building production AI systems for clients across indust
 
 ## What I'm working on
 
-I'm making improvements to **Nirnaya** and stress testing **ProxyLLM**.
+I'm making improvements to **Nirnaya** and testing benchmarks for **ProxyLLM**.
 
 ## Projects
 
 ### Nirnaya
 
-Nirnaya helps you research a company or open-source project. Enter a name or website, and four workers research its team, funding, technology, and competitors at the same time. The app brings their findings into one report with source links, supporting quotes, and notes on information it couldn't find.
-
-It has a web interface, saved results, and spending controls. Real-world research testing and cloud deployment are still pending.
+Nirnaya is an AI due diligence app with four parallel research workers that analyze a company or open-source project's team, funding, technology, and competitors to produce reports with source links, supporting quotes, and evidence gaps. It includes a web interface, persistent results, and spending controls; real-world research validation and cloud deployment are pending.
 
 ### ProxyLLM
 
-ProxyLLM lets apps use Fireworks and Anthropic models through one shared API. Each app gets its own virtual key, while the actual provider keys stay on the server.
-
-It's built with Python, FastAPI, and SQLite. It controls access, limits requests, streams responses, caches responses for reuse, and tracks usage and estimated costs. I built it as a learning and portfolio project, with a local dashboard and automated tests.
+ProxyLLM is a Python LLM gateway built with FastAPI and SQLite that provides a unified API for Fireworks and Anthropic, with per-app virtual keys and server-side provider credentials. It supports access control, rate limiting, streaming, response caching, usage and estimated cost tracking, plus a local dashboard and automated tests.
 
 ## Open Source
 
