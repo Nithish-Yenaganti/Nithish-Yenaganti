@@ -1,37 +1,42 @@
 # Hi, I'm Nithish
 
-I'm a software engineer building production AI systems for clients across industries. I work across the full stack, including distributed agent pipelines, RAG systems on GCP, MCP servers, and fine-tuned LLMs. I care about making these systems reliable, able to scale, and useful in practice.
+I build AI infrastructure and developer tools: LLM gateways, retrieval workflows, and MCP tools that help coding agents work with repository context. My public work spans Python, TypeScript, and Go.
 
-## What I'm working on
+## Selected public projects
 
-I'm making improvements to **Nirnaya** and testing benchmarks for **ProxyLLM**.
+### [Shine](https://github.com/Nithish-Yenaganti/shine)
 
-## Projects
+A terminal Markdown previewer and docs checker. Preview a README, navigate its outline, and check local links, image alt text, and heading structure without leaving the shell.
 
-### Nirnaya
+[Watch the demo](https://youtu.be/0RvUFqgH8io) · [Install v0.1.2](https://github.com/Nithish-Yenaganti/shine/releases/tag/v0.1.2) · [Quick start](https://github.com/Nithish-Yenaganti/shine#install)
 
-Nirnaya is an AI due diligence app with four parallel research workers that analyze a company or open-source project's team, funding, technology, and competitors to produce reports with source links, supporting quotes, and evidence gaps. It includes a web interface, persistent results, and spending controls.
-### ProxyLLM
+### [PromptIT](https://github.com/Nithish-Yenaganti/PromtIT)
 
-ProxyLLM is a Python LLM gateway built with FastAPI and SQLite that provides a unified API for Fireworks and Anthropic, with per-app virtual keys and server-side provider credentials. It supports access control, rate limiting, streaming, response caching, usage and estimated cost tracking, plus a local dashboard and automated tests.
+A local MCP preflight tool that checks a coding request against Git state and returns a structured risk decision. Policies cover migrations, authentication, deployment, dependencies, and secret-looking changes. Enforcement depends on the host calling the tool and honoring its decision.
 
-## Open Source
+[Setup and examples](https://github.com/Nithish-Yenaganti/PromtIT#quick-start)
 
-**[litellm](https://github.com/BerriAI/litellm)** — Python SDK and AI Gateway to call 100+ LLMs · ⭐ 50k+
+### [Aksi](https://github.com/Nithish-Yenaganti/Aksi)
 
-[**fix(rag): attach existing OpenAI file ids**](https://github.com/BerriAI/litellm/pull/30628)
+A local MCP context tool that maps repository structure, tracks stale summaries, and gives coding agents specific context to refresh. A static viewer brings together structure, architecture, and runtime-flow models; the host supplies grounded summaries.
 
-I tracked down a silent data loss bug in the RAG ingestion pipeline: passing an existing `file_id` to the OpenAI path returned a success response without attaching the file to the vector store. I fixed the attach logic, added a provider contract so unsupported backends fail clearly, and wrote tests for all three code paths.
+[Install from source](https://github.com/Nithish-Yenaganti/Aksi#install-for-mcp)
 
----
+## Open-source contribution
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](https://langchain.com/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![GCP](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)](https://cloud.google.com/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=for-the-badge&logo=pinecone&logoColor=white)](https://www.pinecone.io/)
-[![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/)
+**[LiteLLM: fix existing-file RAG ingestion](https://github.com/BerriAI/litellm/pull/30628)** — merged June 18, 2026.
+
+Passing an existing OpenAI `file_id` could report successful ingestion without attaching the file to its vector store. I implemented the attachment path, made unsupported provider behavior explicit, and added regression tests for the success and failure cases. The PR received maintainer approval and passed all 73 checks before merging.
+
+[Read the debugging case study](case-studies/litellm-rag-ingestion.md) · [Browse my public pull requests](https://github.com/search?q=author%3ANithish-Yenaganti+is%3Apr+is%3Apublic&type=pullrequests)
+
+## Current private projects
+
+These repositories are private; the descriptions below explain the work, but are not public demos or benchmark results.
+
+- **Nirnaya:** an AI due-diligence app with four parallel research workers covering a project's team, funding, technology, and competitors. Reports include sources, supporting quotes, and evidence gaps, with persistent results and spending controls.
+- **ProxyLLM:** a Python gateway built with FastAPI and SQLite for Fireworks and Anthropic, with per-app virtual keys, streaming, rate limiting, caching, and usage and estimated-cost tracking.
+
+## Working with my projects
+
+For reproducible bugs or feature requests, use the issue tracker linked from each public repository. Include your version, a minimal example, expected behavior, and actual output, with credentials and private data removed.
