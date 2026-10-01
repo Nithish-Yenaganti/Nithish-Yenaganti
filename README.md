@@ -1,42 +1,45 @@
-# Hi, I'm Nithish
+# Hi, I'm Nithish Yenaganti
 
-I build AI infrastructure and developer tools: LLM gateways, retrieval workflows, and MCP tools that help coding agents work with repository context. My public work spans Python, TypeScript, and Go.
+I work at a small AI consulting startup and build backend systems and developer tools. My work spans AI gateways, terminal tools, and MCP tools for coding agents, using **Python, TypeScript, Go, and SQL**.
 
-## Selected public projects
+I'm interested in **backend engineering and AI infrastructure opportunities**. Below are projects you can run, a merged open-source contribution, and a little about my collaborative work.
 
-### [Shine](https://github.com/Nithish-Yenaganti/shine)
+## Featured projects
+
+### [ProxyLLM](https://github.com/Nithish-Yenaganti/proxyllm) · Python / FastAPI / SQLite
+
+A gateway that lets applications call Anthropic and Fireworks through one OpenAI-compatible API. Each application uses a virtual key while provider credentials stay on the server. It handles provider permissions, request translation, streaming, per-key caching, and usage tracking.
+
+**A feature to try:** inspect the translated request before sending it, using the same preparation code as execution and without calling a provider.
+
+Designed for a single host, with mock and real-provider testing. The management dashboard stays local; public deployment and high availability are outside the current version.
+
+[Run locally](https://github.com/Nithish-Yenaganti/proxyllm#run-locally) · [Architecture](https://github.com/Nithish-Yenaganti/proxyllm/blob/main/ARCHITECTURE.md) · [Request inspection](https://github.com/Nithish-Yenaganti/proxyllm/blob/main/docs/inspection.md)
+
+### [Shine](https://github.com/Nithish-Yenaganti/shine) · Go
 
 A terminal Markdown previewer and docs checker. Preview a README, navigate its outline, and check local links, image alt text, and heading structure without leaving the shell.
 
 [Watch the demo](https://youtu.be/0RvUFqgH8io) · [Install v0.1.2](https://github.com/Nithish-Yenaganti/shine/releases/tag/v0.1.2) · [Quick start](https://github.com/Nithish-Yenaganti/shine#install)
 
-### [PromptIT](https://github.com/Nithish-Yenaganti/PromtIT)
-
-A local MCP preflight tool that checks a coding request against Git state and returns a structured risk decision. Policies cover migrations, authentication, deployment, dependencies, and secret-looking changes. Enforcement depends on the host calling the tool and honoring its decision.
-
-[Setup and examples](https://github.com/Nithish-Yenaganti/PromtIT#quick-start)
-
-### [Aksi](https://github.com/Nithish-Yenaganti/Aksi)
-
-A local MCP context tool that maps repository structure, tracks stale summaries, and gives coding agents specific context to refresh. A static viewer brings together structure, architecture, and runtime-flow models; the host supplies grounded summaries.
-
-[Install from source](https://github.com/Nithish-Yenaganti/Aksi#install-for-mcp)
-
 ## Open-source contribution
 
 **[LiteLLM: fix existing-file RAG ingestion](https://github.com/BerriAI/litellm/pull/30628)** — merged June 18, 2026.
 
-Passing an existing OpenAI `file_id` could report successful ingestion without attaching the file to its vector store. I implemented the attachment path, made unsupported provider behavior explicit, and added regression tests for the success and failure cases. The PR received maintainer approval and passed all 73 checks before merging.
+Passing an existing OpenAI `file_id` could report successful ingestion without attaching the file to its vector store. I implemented the attachment path, made unsupported provider behavior explicit, and added regression tests for the success and failure cases. The change was reviewed and merged by the maintainers.
 
-[Read the debugging case study](case-studies/litellm-rag-ingestion.md) · [Browse my public pull requests](https://github.com/search?q=author%3ANithish-Yenaganti+is%3Apr+is%3Apublic&type=pullrequests)
+[Read the debugging case study](https://github.com/Nithish-Yenaganti/Nithish-Yenaganti/blob/main/case-studies/litellm-rag-ingestion.md) · [Browse my public pull requests](https://github.com/search?q=author%3ANithish-Yenaganti+is%3Apr+is%3Apublic&type=pullrequests)
 
-## Current private projects
+## Other developer tools
 
-These repositories are private; the descriptions below explain the work, but are not public demos or benchmark results.
+| Project | What it does |
+| --- | --- |
+| [PromptIT](https://github.com/Nithish-Yenaganti/PromtIT#quick-start) · TypeScript | MCP preflight checks for coding requests against Git state and configured risk policies; enforcement depends on the host honoring the result. |
+| [Aksi](https://github.com/Nithish-Yenaganti/Aksi#install-for-mcp) · Python | Maps repository structure and tracks stale summaries so coding agents can refresh relevant context; grounded summaries are supplied by the host. |
 
-- **Nirnaya:** an AI due-diligence app with four parallel research workers covering a project's team, funding, technology, and competitors. Reports include sources, supporting quotes, and evidence gaps, with persistent results and spending controls.
-- **ProxyLLM:** a Python gateway built with FastAPI and SQLite for Fireworks and Anthropic, with per-app virtual keys, streaming, rate limiting, caching, and usage and estimated-cost tracking.
+## Collaborative work and ongoing research
 
-## Working with my projects
+- **TimesOfSF:** contributed backend features covering scheduling, subscriptions, health checks, and article APIs through reviewed pull requests in a private team repository.
+- **Nirnaya — private, in progress:** a multi-agent company research app using LangGraph, FastAPI, Redis, and Next.js. A supervisor coordinates four specialists and a critic; reports expose sources, supporting passages, and evidence gaps. Live evaluation and deployment are not presented as completed results.
 
-For reproducible bugs or feature requests, use the issue tracker linked from each public repository. Include your version, a minimal example, expected behavior, and actual output, with credentials and private data removed.
+For project questions or reproducible bugs, use the relevant repository's issue tracker. Include the version, expected behavior, and a minimal example with credentials and private data removed.
