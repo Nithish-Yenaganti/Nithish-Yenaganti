@@ -1,6 +1,6 @@
 # Hi, I'm Nithish Yenaganti
 
-I work at a small AI consulting startup and build backend systems and developer tools. My work spans AI gateways, terminal tools, and MCP tools for coding agents, using **Python, TypeScript, Go, and SQL**.
+I work at a small AI consulting startup and build backend systems and developer tools. My work spans AI gateways and terminal tools, using **Python, TypeScript, Go, and SQL**.
 
 I'm interested in **backend engineering and AI infrastructure opportunities**. Below are projects you can run, a merged open-source contribution, and a little about my collaborative work.
 
@@ -29,13 +29,6 @@ A terminal Markdown previewer and docs checker. Preview a README, navigate its o
 Passing an existing OpenAI `file_id` could report successful ingestion without attaching the file to its vector store. I implemented the attachment path, made unsupported provider behavior explicit, and added regression tests for the success and failure cases. The change was reviewed and merged by the maintainers.
 
 [Read the debugging case study](https://github.com/Nithish-Yenaganti/Nithish-Yenaganti/blob/main/case-studies/litellm-rag-ingestion.md) · [Browse my public pull requests](https://github.com/search?q=author%3ANithish-Yenaganti+is%3Apr+is%3Apublic&type=pullrequests)
-
-## Other developer tools
-
-| Project | What it does |
-| --- | --- |
-| [PromptIT](https://github.com/Nithish-Yenaganti/PromtIT#quick-start) · TypeScript | MCP preflight checks for coding requests against Git state and configured risk policies; enforcement depends on the host honoring the result. |
-| [Aksi](https://github.com/Nithish-Yenaganti/Aksi#install-for-mcp) · Python | Maps repository structure and tracks stale summaries so coding agents can refresh relevant context; grounded summaries are supplied by the host. |
 
 ## Collaborative work and ongoing research
 
