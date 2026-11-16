@@ -1,6 +1,6 @@
 # Hi, I'm Nithish Yenaganti
 
-I'm a **software and AI engineer** at a small AI consulting startup. I build AI systems and developer tools, mostly in **Python, TypeScript, Go and SQL**, and I'm looking for **software engineering and AI engineering** roles.
+I'm a **full-stack AI engineer** at a small AI consulting startup. I design and build complete products, from the interface to the server to the AI behind it, mostly in **Python, TypeScript, Go and SQL**. I'm looking for **full-stack and AI engineering** roles.
 
 ## What I've been building
 
