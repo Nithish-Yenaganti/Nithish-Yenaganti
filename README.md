@@ -1,6 +1,6 @@
 # Hi, I'm Nithish Yenaganti
 
-I build backend systems and developer tools at a small AI consulting startup, mostly in **Python, TypeScript, Go and SQL**. I'm looking for **backend engineering and AI infrastructure** roles.
+I'm a **software and AI engineer** at a small AI consulting startup. I build AI systems and developer tools, mostly in **Python, TypeScript, Go and SQL**, and I'm looking for **software engineering and AI engineering** roles.
 
 ## What I've been building
 
